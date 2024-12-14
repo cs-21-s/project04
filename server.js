@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/resources', express.static(path.join(__dirname, 'resources')));
 
-app.use('/api', api);
-app.use('/UI', UI);
+app.use('/api', apiRoutes);
+app.use('/UI', uiRoutes);
 
 app.get('/', (req, res) => {
     res.redirect('/UI/registrations/register');
