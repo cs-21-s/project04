@@ -1,0 +1,62 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: #0059ff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    background-color: #0059ff;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0059ff;
+    color: #ffffff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #91db73;
+    color: #ffffff;
+    border: 1px solid #dbdbdd;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.registration-card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdd;
+}
