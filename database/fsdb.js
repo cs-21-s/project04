@@ -9,9 +9,14 @@ class Database {
     }
 
     loadData() {
-        const fileData = fs.readFileSync(this.filepath, 'utf8');
-        this.data = JSON.parse(fileData) || [];
-        } 
+        try {
+            const fileData = fs.readFileSync(this.filepath, 'utf8');
+            this.data = JSON.parse(fileData);
+        } catch (error) {
+            this.data = [];
+            this.saveData();
+        }
+    }
 
     saveData() {
         fs.writeFileSync(this.filepath, JSON.stringify(this.data, null, 2));
